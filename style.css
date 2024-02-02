@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* FIRST CONTAINER & FOOTER */
+
+.first-container, .footer {
+    background-color: #1F2937;
+    color: white;
+}
+
+.first-container button {
+    background-color: #3882F6;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.header-img {
+    max-width: 500px;
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header a {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.logo {
+   font-size: 24px;
+   font-weight: 900; 
+   color: #F9FAF8;
+}
+
+.hero {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+/* SECOND CONTAINER */
+
+.second-container {
+    color: #1F2937;
+}
+
+.second-container svg {
+    width: 100px;
+    height: 100px;
+    fill: #1F2937;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+/* THIRD CONTAINER */
+
+.third-container {
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.quote-author {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* FOURTH CONTAINER */
+
+.blue-box {
+    background-color: #3882F6;
+    color: white;
+}
+
+.blue-box button {
+    background-color: #3882F6;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.action {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.action-info {
+    font-size: 18px;
+}
