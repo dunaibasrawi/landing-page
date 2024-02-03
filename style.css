@@ -4,7 +4,11 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+/* MULTIPLE CONTAINERS */
 
 a {
     text-decoration: none;
@@ -13,20 +17,33 @@ a {
 button {
     font-size: 20px;
     font-weight: 700;
+    padding: 8px 24px;
 }
-
-/* FIRST CONTAINER & FOOTER */
 
 .first-container, .footer {
     background-color: #1F2937;
     color: white;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    /* padding: 100px; */
+}
+
+/* FIRST CONTAINER */
+
 .first-container button {
     background-color: #3882F6;
     color: white;
     border-radius: 5px;
     border: none;
+}
+
+.header, .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header-img {
@@ -37,9 +54,11 @@ button {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 24px;
 }
 
-.header a {
+.header a, .hero-secondary {
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -49,6 +68,12 @@ button {
    font-weight: 900; 
    color: #F9FAF8;
 }
+
+/* .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
 
 .hero {
     font-size: 48px;
@@ -60,6 +85,28 @@ button {
 
 .second-container {
     color: #1F2937;
+    align-items: center;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.cards, .card-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.card-item {
+    display: flex;
+    max-width: 150px;
+    flex-flow: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
 }
 
 .second-container svg {
@@ -76,6 +123,7 @@ button {
 .third-container {
     background-color: #E5E7EB;
     color: #1F2937;
+    align-items: center;
 }
 
 .quote {
@@ -87,6 +135,7 @@ button {
 .quote-author {
     font-weight: 700;
     font-size: 18px;
+    align-self: flex-end;
 }
 
 /* FOURTH CONTAINER */
@@ -94,6 +143,8 @@ button {
 .blue-box {
     background-color: #3882F6;
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .blue-box button {
@@ -110,4 +161,13 @@ button {
 
 .action-info {
     font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
